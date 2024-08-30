@@ -304,10 +304,6 @@ except NameError:
 #import q
 logging.getLogger("ncclient").setLevel(logging.INFO)
 
-from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.utils import (
-    to_list,
-)
-
 # Supported configuration modes
 CONFIG_MODE_CHOICES = ['exclusive', 'private', 'dynamic', 'batch', 'ephemeral']
 
